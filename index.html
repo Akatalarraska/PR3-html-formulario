@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/8d073d04ca.js" crossorigin="anonymous"></script>
+</head>
+  <body>
+    <form>
+    <div class="container">
+        <div class="header">
+            <h2>Payment form example</h2></div>
+        <div class="formulario">
+            <div class="cardinfo">
+                <div class="sms"><strong>Some fields are missing</strong></div>
+                <fieldset>
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="mb-3">
+                                <label for="creditcard" class="form-label">Card #</label>
+                                <input type="number" class="form-control" id="creditcard" placeholder="XXXXXXXXXXXXXXXX">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <label for="cvc" class="form-label">CVC #</label>
+                                <input type="number" class="form-control" id="cvc" placeholder="0000">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="money" class="form-label">Amount</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text"><strong>$</strong></span>
+                                    </div>
+                                    <input type="number" class="form-control" id="money" placeholder="Amount" aria-label="Amount (to the nearest dollar)">
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="">
+                          </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="">
+                          </div>
+                        <div class="mb-3" class="modopago">
+                            <label for="visa" class="form-label">We accept:</label>
+                                <div class="tarjetas">
+                                    <label class="tipotarg1">
+                                    <input type="radio" name="tarjeta" value="mastercard">
+                                    <i class="fa-brands fa-cc-mastercard" style="color: #ffffff;"></i>
+                                    </label>
+
+                                    <label class="tipotarg">
+                                        <input type="radio" name="tarjeta" value="visa">
+                                        <i class="fa-brands fa-cc-visa" style="color: #fcfcfc;"></i>
+                                    </label>
+                                
+                                    <label class="tipotarg">
+                                    <input type="radio" name="tarjeta" value="american-express">
+                                    <i class="fa-brands fa-cc-amex" style="color: #ffffff;"></i>
+                                    </label>
+                                
+                                    <label class="tipotarg">
+                                    <input type="radio" name="tarjeta" value="discover">
+                                    <i class="fa-brands fa-cc-discover" style="color: #ffffff;"></i>
+                                    </label>
+                                </div>
+                          </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="surname" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="surname" placeholder="">
+                          </div>
+                            <div class="row-zone">
+                                    <div class="col-5">
+                                        <div class="mb-">
+                                            <label for="state" class="form-label">State</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Pick a state</option>
+                                                <option value="1">Uno</option>
+                                                <option value="2">Dos</option>
+                                                <option value="3">Tres</option>
+                                            </select>
+                                        </div>
+                                    </div>  
+                                    <div class="col-6" class="muevete">
+                                        <div class="mb-3">
+                                            <label for="postalCode" class="form-label">Postal Code</label>
+                                            <input type="text" class="form-control" id="postalCode" placeholder="">
+                                        </div>
+                                    </div>
+                            </div>
+                        <div class="mb-3">
+                            <label for="addtext" class="form-label">Message</label>
+                            <textarea rows="4" type="text" class="form-control" id="addtext class="resizeable-textarea"></textarea>
+                            <small>Add any notes here</small>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </fieldset>
+            <div class="footer">
+                    <button class="btn btn-secondary">Cancel</button>
+                    <button type="submit" class="btn btn-info" >Send</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>
